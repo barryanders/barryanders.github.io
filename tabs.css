@@ -1,0 +1,46 @@
+.magic-tabs {
+  overflow-x: hidden; /* so we can easily hide the radio inputs */
+  margin: 2rem 0;
+  border-bottom: 1px solid #ccc;
+}
+.magic-tabs [type="radio"] { display: none; /* hide the inputs */ }
+.magic-tabs > .tabs {
+  display: flex;
+  align-items: stretch;
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+.magic-tabs > .tabs > .tab > label {
+  display: block;
+  margin-bottom: -1px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  background: #eee;
+  color: #666;
+  font-size: 12px; 
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;  
+  transition: all 0.3s;
+}
+.magic-tabs > .tabs > .tab:hover > label { border-top-color: #333; color: #333; }
+.magic-tabs > .tab-content {
+  padding: 1rem;
+  display: none;
+  color: #777;
+}
+/* as we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
+.magic-tabs [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) label,
+.magic-tabs [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) label,
+.magic-tabs [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) label {
+  border-bottom-color: #fff;
+  border-top-color: #0000ff;
+  background: #fff;
+  color: #222;
+}
+.magic-tabs [type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+.magic-tabs [type="radio"]:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
+.magic-tabs [type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3)
+{ display: block; }

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Barry Anders</title>
+  <link href="/preflight.css" rel="stylesheet">
+  <style>
+    /* Layout */
+    html { font: calc(12px + (13.5 - 12) * ((100vw - 320px) / (960 - 320))) Helvetica Neue, Helvetica, Arial, sans-serif; }
+    body {
+      min-width: 240px;
+      margin: 1.5rem;
+      background: #ebebeb;
+    }
+    header, footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    main {
+      padding: 1.5rem;
+      background-color: #ffffff;
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    }
+
+    .magic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(16rem, 100%), 1fr));
+      grid-gap: 1.5rem;
+    }
+    .magic-grid\:center {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+      grid-gap: 1.5rem;
+      margin: 0 auto;
+    }
+
+    /* Typography */
+    h1, .h1 { font-size: 400%; }
+    h2, .h2 { font-size: 280%; }
+    h3, .h3 { font-size: 200%; }
+    h4, .h4 { font-size: 140%; }
+    h5, .h5 { font-size: 125%; }
+
+    /* Utilities */
+    .contain { max-width: 960px; }
+    .aspect-ratio\:16x9 {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+    }
+
+    .spacing\:1 > * { margin: 1.5rem auto; }
+    .spacing\:1:not(body) > *:first-child { margin: 0 auto 1.5rem auto; }
+    .spacing\:1:not(body) > *:last-child { margin: 1.5rem auto 0 auto; }
+    .spacing\:2 > * { margin: 2.25rem auto; }
+    .spacing\:2:not(body) > *:first-child { margin: 0 auto 3rem auto; }
+    .spacing\:2:not(body) > *:last-child { margin: 3rem auto 0 auto; }
+
+    .border\:round { border-radius: 0.5rem; }
+
+    .shape\:circle { border-radius: 50%; }
+    .shape\:hex { clip-path: url(#shape-hex); }
+
+    /* Components */
+    .button {
+      align-items: center;
+      background-color: #ffffff;
+      border-radius: 0.75rem;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      box-sizing: border-box;
+      color: #121212;
+      cursor: pointer;
+      display: inline-flex;
+      flex: 1 1 auto;
+      font-size: 120%;
+      font-weight: 500;
+      justify-content: center;
+      line-height: 1;
+      margin: 0;
+      outline: none;
+      padding: 1rem 1.2rem;
+      text-align: center;
+      text-decoration: none;
+      white-space: nowrap;
+      border: 0;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      transition: box-shadow .2s;
+    }
+    .button:hover { box-shadow: #121212 0 0 0 2px, transparent 0 0 0 0; transition: none; }
+    .video { border-radius: 0.75rem; }
+
+    /* IDs */
+    #avatar {
+      width: 8rem;
+      height: 8rem;
+      background-color: #d3d3d3;
+      color: transparent;
+    }
+  </style>
+</head>
+<body class="spacing:2">
+  <header>
+    <img alt="Barry Anders" id="avatar" class="shape:hex" src="https://avatars.githubusercontent.com/u/91902180">
+    <h1 class="h2">乃ﾑ尺尺ﾘ</h1>
+    <h2 class="h5" style="text-transform: uppercase; letter-spacing: 2px; font-weight: 500;">Barry Anders</h2>
+    <!--nav></nav-->
+  </header>
+
+  <main class="contain spacing:1 border:round">
+    <div class="magic-grid:center">
+      <a alt="Barry's YouTube Channel" class="button" href="https://www.youtube.com/barryanders">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 2rem; fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+        &nbsp;YouTube
+      </a>
+      <a alt="Barry's GitHub Profile" class="button" href="https://github.com/barryanders">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 2rem; fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
+        &nbsp;GitHub
+      </a>
+    </div>
+    <div class="magic-grid:center">
+      <iframe class="video contain aspect-ratio:16x9" src="https://www.youtube.com/embed/videoseries?list=PLyQ8NUJwtt_2s8kaKJK0JB6R0C7Bp1nFO" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
+      <iframe class="video contain aspect-ratio:16x9" src="https://www.youtube.com/embed/videoseries?list=PLyQ8NUJwtt_3HqivnEeylqV1FrmYrsnXB" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
+    </div>
+  </main>
+
+  <!-- clip-path for .shape:hex -->
+  <svg height="0" viewBox="0 0 200 188" width="0"><defs><clipPath clipPathUnits="objectBoundingBox" id="shape-hex" transform="scale(0.005 0.005319148936170213)"><path d="M193.248 69.51C185.95 54.1634 177.44 39.4234 167.798 25.43L164.688 20.96C160.859 15.4049 155.841 10.7724 149.998 7.3994C144.155 4.02636 137.633 1.99743 130.908 1.46004L125.448 1.02004C108.508 -0.340012 91.4873 -0.340012 74.5479 1.02004L69.0879 1.46004C62.3625 1.99743 55.8413 4.02636 49.9981 7.3994C44.155 10.7724 39.1367 15.4049 35.3079 20.96L32.1979 25.47C22.5561 39.4634 14.0458 54.2034 6.74789 69.55L4.39789 74.49C1.50233 80.5829 0 87.2441 0 93.99C0 100.736 1.50233 107.397 4.39789 113.49L6.74789 118.43C14.0458 133.777 22.5561 148.517 32.1979 162.51L35.3079 167.02C39.1367 172.575 44.155 177.208 49.9981 180.581C55.8413 183.954 62.3625 185.983 69.0879 186.52L74.5479 186.96C91.4873 188.32 108.508 188.32 125.448 186.96L130.908 186.52C137.638 185.976 144.163 183.938 150.006 180.554C155.85 177.17 160.865 172.526 164.688 166.96L167.798 162.45C177.44 148.457 185.95 133.717 193.248 118.37L195.598 113.43C198.493 107.337 199.996 100.676 199.996 93.93C199.996 87.1841 198.493 80.5229 195.598 74.43L193.248 69.51Z"></path></clipPath></defs></svg>
+</body>
+</html>
