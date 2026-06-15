@@ -14,6 +14,7 @@
       min-width: 240px;
       margin: 1.5rem;
       background: #ebebeb;
+      color: #121212;
     }
     header, footer {
       display: flex;
@@ -194,6 +195,43 @@
         top: 0.75rem;
         width: 2.35rem;
       }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #141414;
+        color: #f4f0ea;
+      }
+      main {
+        background-color: #202020;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 12px 32px -18px, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px;
+      }
+      .button {
+        background-color: #2a2a2a;
+        color: #f4f0ea;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px;
+      }
+      .button:hover { box-shadow: #f4f0ea 0 0 0 2px, transparent 0 0 0 0; }
+      .app-card {
+        background: #2a2a2a;
+        color: #f4f0ea;
+        box-shadow: rgba(0, 0, 0, 0.32) 0px 10px 24px -18px, rgba(255, 255, 255, 0.12) 0px 0px 0px 1px;
+      }
+      .app-card:hover { box-shadow: #f4f0ea 0 0 0 2px, transparent 0 0 0 0; }
+      .source-link {
+        background: #f4f0ea;
+        color: #161616;
+        box-shadow: rgba(0, 0, 0, 0.32) 0 1px 4px, rgba(255, 255, 255, 0.12) 0 0 0 1px;
+      }
+      .source-link:hover { box-shadow: #f4f0ea 0 0 0 2px, transparent 0 0 0 0; }
+      .coffee-link {
+        background: #f3c85f;
+        border-color: #ffd978;
+        color: #1c1610;
+        box-shadow: rgba(0, 0, 0, 0.35) 0 12px 30px -18px, rgba(255, 217, 120, 0.28) 0 0 0 1px;
+      }
+      .coffee-link:hover { box-shadow: #ffd978 0 0 0 2px, transparent 0 0 0 0; }
+      .coffee-icon { background: #fff0bd; }
     }
   </style>
 </head>
