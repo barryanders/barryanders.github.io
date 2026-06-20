@@ -190,12 +190,16 @@
     .coffee-link:hover { box-shadow: #201714 0 0 0 2px, transparent 0 0 0 0; }
     .coffee-icon {
       align-items: center;
-      background: #f7c45b;
-      border-radius: 999px;
       display: inline-flex;
-      height: 1.8rem;
+      flex: 0 0 auto;
+      height: 1.7rem;
       justify-content: center;
-      width: 1.8rem;
+      width: 1.7rem;
+    }
+    .coffee-icon img {
+      display: block;
+      height: 100%;
+      width: 100%;
     }
 
     @media (max-width: 420px) {
@@ -261,7 +265,6 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0 12px 30px -18px, rgba(255, 217, 120, 0.28) 0 0 0 1px;
       }
       .coffee-link:hover { box-shadow: #ffd978 0 0 0 2px, transparent 0 0 0 0; }
-      .coffee-icon { background: #fff0bd; }
     }
   </style>
 </head>
@@ -304,7 +307,9 @@
         </a>
       </div>
       <a class="coffee-link" href="https://buymeacoffee.com/barryanders" aria-label="Buy me a coffee">
-        <span class="coffee-icon" aria-hidden="true">☕</span>
+        <span class="coffee-icon" aria-hidden="true">
+          <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="">
+        </span>
         <span>Buy me a coffee</span>
       </a>
     </section>
