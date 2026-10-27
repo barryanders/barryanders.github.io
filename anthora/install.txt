@@ -1,0 +1,6 @@
+Anthora for Mac
+
+Download the current free release from https://github.com/barryanders/Anthora/releases/latest
+Unzip the download and move Anthora.app to Applications. The app requires Apple silicon and macOS 14 or later. Direct builds are ad-hoc signed, not Apple-notarized. Follow macOS Privacy & Security instructions if the first launch is blocked; do not disable Gatekeeper.
+
+All features are free. No purchase or license key is required.

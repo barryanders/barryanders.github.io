@@ -1,0 +1,72 @@
+/* Shared Anders chrome and reading surfaces. */
+.gb-global-header, .gb-global-footer, .brand-page, .report-page { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; color: #1d1d1f; }
+.gb-global-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.92); backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid #0000000d; }
+.gb-nav-inner { width: min(1200px, calc(100% - 64px)); margin: auto; min-height: 64px; display: flex; justify-content: space-between; align-items: center; gap: 28px; }
+.gb-nav-inner nav { display: flex; gap: 36px; align-items: center; }
+.gb-nav-inner nav a { font-size: 14px; color: #424245; padding: 14px 0; }
+.gb-nav-inner nav a:hover { color: #0066cc; }
+.brand-lockup { display: inline-flex; align-items: center; gap: 10px; color: #1d1d1f; }
+.brand-lockup strong { font-size: 17px; line-height: 1.2; font-weight: 600; letter-spacing: -.035em; }
+.brand-mark { width: 27px; height: 29px; flex: 0 0 auto; border-radius: 8px; background: #1d1d1f; box-shadow: none; position: relative; }
+.brand-mark i { position: absolute; inset: 5px 6px 6px; border: 1.5px solid #fff; border-bottom: 0; border-radius: 14px 14px 0 0; }
+.brand-mark b { width: 5px; height: 5px; bottom: 6px; left: 50%; translate: -50% 0; border-radius: 50%; position: absolute; background: #bfc5cc; }
+.gb-global-footer { background: #f5f5f7; }
+.gb-footer-inner { width: min(1200px, calc(100% - 64px)); margin: auto; padding: 44px 0 26px; }
+.gb-footer-top { display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid #d2d2d7; padding-bottom: 26px; }
+.gb-footer-top p { color: #6e6e73; font-size: 14px; }
+.gb-footer-links { display: flex; justify-content: space-between; gap: 40px; padding: 28px 0; }
+.gb-footer-links nav { display: flex; flex-wrap: wrap; gap: 18px 24px; }
+.gb-footer-links a { color: #515154; font-size: 14px; }
+.gb-footer-links a:hover { text-decoration: underline; }
+.gb-copyright { font-size: 12px; color: #6e6e73; margin: 0; }
+.brand-page { background: #fff; }
+.brand-page .legal-page { min-height: 65vh; padding: 68px 24px 96px; background: #fff; display: block; }
+.brand-page .legal-page article { width: min(780px, 100%); margin: auto; padding: 0; border: 0; border-radius: 0; box-shadow: none; background: transparent; }
+.brand-page .legal-page h1 { margin: 0 0 24px; font: 650 clamp(38px, 5vw, 60px)/1.08 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; letter-spacing: -.04em; }
+.brand-page .legal-page h2 { font-size: 24px; line-height: 1.25; margin: 44px 0 14px; letter-spacing: -.025em; }
+.brand-page .legal-page p { color: #515154; font-size: 17px; line-height: 1.7; }
+.brand-page .legal-page .legal-note { padding: 0 0 25px; border-bottom: 1px solid #d2d2d7; background: transparent; color: #6e6e73; font-size: 14px; }
+.brand-page .legal-page article > a:last-child { color: #0066cc; font-size: 17px; font-weight: 400; }
+.privacy-request-button { background: #0071e3; border-radius: 999px; font-size: 16px; font-weight: 400; }
+.report-page { min-height: 70vh; background: #fff; padding: 64px 24px 90px; }
+.report-page .report-card { width: min(760px, 100%); padding: 0; border: 0; border-radius: 0; box-shadow: none; background: #fff; }
+.report-card h1 { font: 650 clamp(38px, 5vw, 56px)/1.1 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; letter-spacing: -.04em; }
+.report-card .report-intro { font-size: 19px; color: #6e6e73; }
+.report-card .report-review-note { background: #f5f5f7; border: 0; border-radius: 16px; padding: 22px; }
+.report-card .report-review-note p, .report-card .report-review-note strong { font-size: 16px; color: #515154; }
+.report-card label { font-size: 14px; }
+.report-card input, .report-card select, .report-card textarea { font-size: 16px; border-radius: 10px; border-color: #c6c6c8; }
+.report-card button[type=submit] { border-radius: 999px; background: #0071e3; font-size: 16px; font-weight: 500; }
+.gb-global-header a:focus-visible, .gb-global-footer a:focus-visible, .gb-storefront a:focus-visible { outline: 3px solid #0071e3; outline-offset: 5px; }
+@media(max-width:600px) { .gb-nav-inner, .gb-footer-inner { width: calc(100% - 40px); }.gb-nav-inner { min-height: 60px; gap: 14px; }.gb-nav-inner nav { gap: 16px; }.brand-lockup { gap: 7px; }.brand-lockup strong { font-size: 15px; }.brand-mark { width: 24px; height: 26px; }.gb-nav-inner nav a { font-size: 13px; }.gb-footer-top, .gb-footer-links { flex-direction: column; align-items: flex-start; gap: 20px; }.gb-footer-top p { margin: 0; }.brand-page .legal-page { padding: 42px 20px 64px; }.report-page { padding: 40px 20px 64px; } }
+.brand-page .simple-page { background:#fff; padding:64px 24px 90px; min-height:65vh; }
+.brand-page .simple-card { width:min(760px,100%); padding:0; border:0; border-radius:0; box-shadow:none; background:#fff; }
+.brand-page .simple-card h1 { font:650 clamp(38px,5vw,56px)/1.1 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif; letter-spacing:-.04em; }
+.brand-page .simple-card > p:not(.sales-kicker,.reference) { font-size:18px; color:#6e6e73; }
+.brand-page .simple-card .sales-kicker { font-size:16px; text-transform:none; letter-spacing:0; color:#6e6e73; }
+.brand-page .simple-card .sales-button { border-radius:999px; background:#0071e3; font-size:16px; font-weight:500; }
+.brand-page .simple-link { font-size:16px; color:#0066cc; }
+.report-card .report-form small,.report-card .report-privacy { font-size:14px; line-height:1.6; color:#6e6e73; }
+.report-card h1 { margin-top:0; }
+.report-card .report-form { padding:28px; border:1px solid #d2d2d7; box-shadow:none; border-radius:18px; }
+.report-card .report-form label { font-size:14px; font-weight:500; }
+.report-card .report-form input,.report-card .report-form textarea { font-size:16px; }
+.report-card .report-form input:focus,.report-card .report-form textarea:focus { outline:3px solid #0071e326; border-color:#0071e3; }
+.brand-page .intake-page { background:#fff; padding:64px 24px; font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif; }
+.brand-page .intake-page > section { width:min(780px,100%); margin:auto; }
+.brand-page .intake-page h1 { font:650 clamp(38px,5vw,56px)/1.1 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif; letter-spacing:-.04em; }
+.deposit-page { background:#fff; color:#1d1d1f; font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif; }
+.deposit-page h1,.deposit-page h2 { font-family:inherit; font-weight:650; letter-spacing:-.04em; line-height:1.08; }
+.deposit-page .deposit-eyebrow { font-size:14px; letter-spacing:0; text-transform:none; color:#6e6e73; }
+.deposit-page .deposit-lede { color:#6e6e73; font-size:21px; }
+.deposit-page .deposit-button { border-radius:999px; background:#0071e3; color:#fff; font-size:16px; font-weight:500; }
+.deposit-page .deposit-proof,.deposit-page .deposit-truth { background:#f5f5f7; color:#1d1d1f; }
+.deposit-page .deposit-truth-copy p,.deposit-page .deposit-heading p { color:#6e6e73; font-size:18px; }
+.deposit-page .deposit-offer { background:#1d1d1f; border-radius:24px; color:#fff; }
+.brand-page .privacy-dialog-card > h2 { margin:0 45px 16px 0; font:600 32px/1.15 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif; letter-spacing:-.035em; }
+.brand-page .privacy-dialog-card > p { font-size:17px; color:#6e6e73; }
+.brand-page .privacy-request-form label { font-size:14px; font-weight:500; }
+.brand-page .privacy-request-form input,.brand-page .privacy-request-form textarea { font-size:16px; }
+.brand-page .privacy-request-form > p { font-size:14px; }
+.brand-page .privacy-request-form input:focus,.brand-page .privacy-request-form textarea:focus { outline:3px solid #0071e326; border-color:#0071e3; }
+@media(max-width:360px) { .gb-nav-inner { width:calc(100% - 32px); gap:10px; }.gb-nav-inner nav { gap:12px; }.gb-nav-inner nav a { font-size:12px; }.gb-nav-inner .brand-lockup strong { font-size:14px; }.gb-nav-inner .brand-mark { width:22px; height:24px; } }

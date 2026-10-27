@@ -1,0 +1,16 @@
+body.gb-static-document { margin:0; background:#fff; color:#1d1d1f; font:17px/1.65 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif; }
+.gb-static-document a { text-decoration:none; }
+.gb-static-document .page,.gb-static-document .purchase-shell { width:min(780px,calc(100% - 40px)); max-width:780px; margin:auto; padding:64px 0 90px; min-height:65vh; display:block; }
+.gb-static-document .hero,.gb-static-document .card,.gb-static-document .purchase-card { background:#fff; color:#1d1d1f; padding:0; border:0; border-radius:0; box-shadow:none; }
+.gb-static-document .card { margin-top:36px; }
+.gb-static-document h1 { font-size:clamp(38px,5vw,56px); letter-spacing:-.04em; line-height:1.1; font-weight:650; }
+.gb-static-document h2 { font-size:24px; margin-top:36px; letter-spacing:-.025em; }
+.gb-static-document p,.gb-static-document .hero p,.gb-static-document li { color:#6e6e73; font-size:17px; }
+.gb-static-document .purchase-card > img { width:130px; height:120px; object-fit:contain; }
+.gb-static-document .purchase-card .eyebrow { margin-top:25px; color:#6e6e73; font-size:16px; text-transform:none; letter-spacing:0; }
+.gb-static-document .purchase-note { padding:24px; border:0; border-radius:16px; background:#f5f5f7; color:#1d1d1f; }
+.gb-static-document .purchase-note span { color:#6e6e73; font-size:16px; }
+.gb-static-document .button { display:inline-flex; padding:12px 22px; min-height:46px; border-radius:999px; border:1px solid #0071e3; color:#0066cc; font-size:16px; font-weight:400; }
+.gb-static-document .button.primary { background:#0071e3; color:#fff; }
+.gb-static-document .actions { display:flex; gap:20px; flex-wrap:wrap; margin-top:30px; }
+.gb-static-document .card a { color:#0066cc; }
