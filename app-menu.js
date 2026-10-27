@@ -44,3 +44,5 @@ document.querySelectorAll('.gb-app-menu').forEach(menu => {
     }
   });
 });
+
+setTimeout(() => document.querySelector('.gb-global-header')?.classList.add('brand-settled'), 2400);

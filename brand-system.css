@@ -83,3 +83,12 @@
 .gb-nav-inner nav .gb-app-tray a:hover { background:#f5f5f7; }
 .gb-app-tray .gb-app-icon { width:56px; height:56px; }
 @media(max-width:600px) { .gb-app-menu summary { font-size:13px; }.gb-app-tray { right:16px; gap:4px; padding:16px 8px; }.gb-app-tray .gb-app-icon { width:44px; height:44px; }.gb-nav-inner nav .gb-app-tray a { font-size:12px; } }
+
+/* The wordmark introduces itself, then leaves a quiet initial. */
+.gb-wordmark { display:inline-flex; align-items:baseline; white-space:nowrap; }
+.gb-wordmark-tail { display:inline-block; max-width:70px; opacity:1; overflow:hidden; transition:max-width 850ms cubic-bezier(.22,1,.36,1),opacity 500ms ease; }
+.gb-global-header.brand-settled .gb-wordmark-tail { max-width:0; opacity:0; }
+.gb-global-header.brand-settled a:hover .gb-wordmark-tail,
+.gb-global-header.brand-settled a:focus-visible .gb-wordmark-tail { max-width:70px; opacity:1; }
+.gb-global-header .brand-lockup { min-width:70px; }
+@media(prefers-reduced-motion:reduce) { .gb-wordmark-tail { transition:none; } }
