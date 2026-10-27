@@ -1,6 +1,6 @@
 # Anders
 
-Free apps by Barry Anders. Website: https://barryanders.github.io/
+Free apps from Anders. Website: https://barryanders.github.io/
 
 This repository contains only the static public website and its assets. It has no backend, credentials, customer records, payment integrations, or private app data. App source lives in its own repository.
 
