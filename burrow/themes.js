@@ -1,2 +1,2 @@
-const art={sage:"mole-tabs-studio",warm:"burrow-walking",midnight:"burrow-reading",sand:"burrow-jumping"};
+const art={sage:"mole-tabs-studio",warm:"burrow-walking",midnight:"burrow-reading",sand:"retro-mole"};
 document.querySelectorAll(".theme-picker button").forEach(button=>button.addEventListener("click",()=>{document.querySelector(".burrow-demo").dataset.theme=button.dataset.theme;document.querySelector("#theme-mole").src=`/burrow/assets/${art[button.dataset.theme]}.png`;document.querySelectorAll(".theme-picker button").forEach(item=>item.setAttribute("aria-pressed",String(item===button)));}));
