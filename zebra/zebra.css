@@ -1,0 +1,36 @@
+.product-zebra{--zebra-ink:#20272c;--zebra-teal:#36666c;--zebra-muted:#626b70}
+.product-zebra .zebra-hero{display:grid;grid-template-columns:1.15fr 1fr;gap:52px;align-items:center;padding-block:86px 100px}
+.product-zebra .zebra-hero h1{font-size:clamp(54px,7.3vw,94px);line-height:1.02;color:var(--zebra-ink);letter-spacing:-.065em}
+.product-zebra .zebra-hero h1 span{color:var(--zebra-teal)}
+.product-zebra .zebra-hero .lead{font-size:21px;line-height:1.6;color:var(--zebra-muted);margin-top:26px}
+.product-zebra .zebra-hero-icon{width:100%;height:auto;max-width:470px;justify-self:center}
+.product-zebra .button.primary{background:var(--zebra-ink);border-color:var(--zebra-ink)}
+.product-zebra .button.primary:hover{background:#365861;border-color:#365861}
+.product-zebra .text-link,.product-zebra .install-list a:not(.button){color:var(--zebra-teal)}
+.product-zebra .zebra-how{padding-bottom:90px}
+.product-zebra .zebra-how h2{font-size:40px}
+.product-zebra .zebra-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:38px;margin-top:40px}
+.product-zebra .zebra-steps article{border-top:1px solid #d2d5d5;padding-top:22px}
+.product-zebra .step-number{font-size:13px;color:var(--zebra-muted);display:block;margin-bottom:26px;font-variant-numeric:tabular-nums}
+.product-zebra .zebra-steps h3{font-size:23px}
+.product-zebra .zebra-steps p,.product-zebra .zebra-details p{color:var(--zebra-muted)}
+.product-zebra .zebra-install{background:#f4f3ef;padding-block:80px;scroll-margin-top:60px}
+.product-zebra .install-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:90px}
+.product-zebra .install-grid>.text-link,.product-zebra .install-grid>div>.text-link{margin-top:24px}
+.product-zebra .install-list{margin:0;padding-left:24px;display:grid;gap:32px}
+.product-zebra .install-list li{padding-left:12px}
+.product-zebra .install-list h3{font-size:23px}
+.product-zebra .install-list p{margin-top:12px;color:var(--zebra-muted)}
+.product-zebra .install-list code{display:block;margin:18px 0 0;padding:16px 18px;background:#e7e7e2;border-radius:8px;font-size:15px;overflow-wrap:anywhere}
+.product-zebra .install-list .button{margin-top:18px}
+.product-zebra .install-list .release-note{font-size:13px}
+.product-zebra .install-list a:not(.button){text-decoration:underline;text-underline-offset:3px}
+.product-zebra .zebra-details{display:grid;grid-template-columns:1fr 1.1fr;gap:90px;padding-block:90px}
+.product-zebra .zebra-faq details{padding:22px 0;border-bottom:1px solid #d2d5d5}
+.product-zebra .zebra-faq details:first-child{padding-top:0}
+.product-zebra summary{font-size:19px;font-weight:600;cursor:pointer}
+.product-zebra summary:focus-visible{outline:2px solid #36666c;outline-offset:6px}
+.product-zebra .zebra-faq p{font-size:16px}
+@media(max-width:800px){.product-zebra .zebra-hero{gap:20px;padding-block:50px 70px}.product-zebra .zebra-hero h1{font-size:58px}.product-zebra .zebra-hero .lead{font-size:18px}.product-zebra .install-grid,.product-zebra .zebra-details{gap:40px}.product-zebra .zebra-steps{gap:22px}}
+@media(max-width:600px){.product-zebra .shell{width:calc(100% - 40px)}.product-zebra .zebra-hero{grid-template-columns:1fr;gap:20px;padding-top:30px;text-align:center}.product-zebra .zebra-hero-icon{grid-row:1;max-width:210px}.product-zebra .zebra-hero h1{font-size:62px}.product-zebra .zebra-hero .actions{justify-content:center;gap:18px}.product-zebra .zebra-steps,.product-zebra .install-grid,.product-zebra .zebra-details{grid-template-columns:1fr}.product-zebra .zebra-how h2{font-size:34px}.product-zebra .zebra-how{padding-bottom:55px}.product-zebra .zebra-steps{gap:30px}.product-zebra .step-number{margin-bottom:12px}.product-zebra .zebra-install,.product-zebra .zebra-details{padding-block:55px}.product-zebra .zebra-hero .eyebrow{font-size:15px}.product-zebra .install-list{padding-left:18px}.product-zebra .install-list li{padding-left:4px}.product-zebra .install-list .button{width:100%;font-size:15px}.product-zebra .zebra-details{gap:30px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
