@@ -18,8 +18,8 @@
 .mail-card:nth-child(3) { margin-top:56px; background:#1d1d1f; color:#fff; }
 .mail-card small { display:block; font-size:13px; margin-bottom:36px; color:#6e6e73; }
 .mail-card:nth-child(3) small,.mail-card:nth-child(3) p { color:#b2b2b8; }
-.goodburrow-product .mail-card h3 { font-size:25px; }
-.goodburrow-product .mail-card p { font-size:15px; color:#6e6e73; }
+.anders-product .mail-card h3 { font-size:25px; }
+.anders-product .mail-card p { font-size:15px; color:#6e6e73; }
 .mail-card b { display:inline-block; background:#f5f5f7; color:#1d1d1f; padding:10px 12px; border-radius:7px; font-size:13px; margin-top:25px; font-weight:500; }
 .visual-gallery,.product-benefits { padding:100px 0; }
 .visual-gallery { background:#f5f5f7; }
@@ -33,7 +33,7 @@
 .template-preview { overflow:hidden; border-radius:18px; padding:0 28px 30px; background:#fff; }
 .template-top { height:130px; margin:0 -28px 28px; background:var(--template-cover); }
 .template-preview small { font-size:14px; color:#6e6e73; }
-.goodburrow-product .template-preview h3 { margin-top:16px; font-size:25px; }
+.anders-product .template-preview h3 { margin-top:16px; font-size:25px; }
 .template-preview p { font-size:17px; color:#6e6e73; }
 .template-lines { display:grid; gap:8px; margin:26px 0; }
 .template-lines i { display:block; background:#eeeef0; height:6px; border-radius:4px; }
@@ -58,7 +58,7 @@
 .preview-main { padding:30px; }
 .preview-heading { display:flex; justify-content:space-between; gap:20px; align-items:center; }
 .preview-heading .preview-label { margin:0 0 9px; color:#6e6e73; font-size:13px; }
-.goodburrow-product .preview-heading h2 { font-size:29px; }
+.anders-product .preview-heading h2 { font-size:29px; }
 .preview-heading button { background:#0071e3; color:#fff; border:0; border-radius:8px; padding:9px 13px; font:14px inherit; pointer-events:none; }
 .preview .search { margin:24px 0 15px; border:1px solid #d2d2d7; border-radius:9px; padding:10px 14px; color:#86868b; font-size:14px; }
 .preview .saved { padding:17px 2px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #eeeef0; font-size:15px; }
@@ -66,4 +66,4 @@
 .preview .saved span { display:block; color:#86868b; font-size:13px; margin-top:4px; }
 .preview .saved em { color:#0066cc; font-style:normal; font-size:14px; }
 @media(max-width:900px) { .visual-gallery-head { grid-template-columns:1fr; gap:24px; }.avatar-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }.mail-stack { gap:14px; padding:26px; }.mail-card { padding:22px 16px; }.product-final-grid { flex-direction:column; align-items:flex-start; gap:28px; } }
-@media(max-width:600px) { .signature-showcase { padding:20px; gap:16px; }.signature-preview { padding:20px 16px; grid-template-columns:44px minmax(0,1fr); gap:12px; }.signature-preview > img { width:44px; height:44px; }.signature-preview strong { font-size:19px; }.signature-preview span { font-size:13px; overflow-wrap:anywhere; }.mail-stack { grid-template-columns:1fr; padding:20px; gap:16px; }.mail-card { min-height:0; padding:24px; }.mail-card:nth-child(n) { margin:0; }.mail-card small { margin-bottom:20px; }.visual-gallery,.product-benefits { padding:64px 0; }.visual-gallery-head > p { font-size:19px; }.avatar-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }.template-gallery,.product-benefit-grid { grid-template-columns:1fr; }.product-benefit-grid { gap:30px; }.product-final { padding-bottom:64px; }.product-final-grid { padding:30px 24px; }.preview { grid-template-columns:1fr; }.preview aside { display:none; }.preview-main { padding:20px; }.preview-heading { gap:10px; }.goodburrow-product .preview-heading h2 { font-size:24px; }.preview-heading button { font-size:12px; padding:8px; } }
+@media(max-width:600px) { .signature-showcase { padding:20px; gap:16px; }.signature-preview { padding:20px 16px; grid-template-columns:44px minmax(0,1fr); gap:12px; }.signature-preview > img { width:44px; height:44px; }.signature-preview strong { font-size:19px; }.signature-preview span { font-size:13px; overflow-wrap:anywhere; }.mail-stack { grid-template-columns:1fr; padding:20px; gap:16px; }.mail-card { min-height:0; padding:24px; }.mail-card:nth-child(n) { margin:0; }.mail-card small { margin-bottom:20px; }.visual-gallery,.product-benefits { padding:64px 0; }.visual-gallery-head > p { font-size:19px; }.avatar-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }.template-gallery,.product-benefit-grid { grid-template-columns:1fr; }.product-benefit-grid { gap:30px; }.product-final { padding-bottom:64px; }.product-final-grid { padding:30px 24px; }.preview { grid-template-columns:1fr; }.preview aside { display:none; }.preview-main { padding:20px; }.preview-heading { gap:10px; }.anders-product .preview-heading h2 { font-size:24px; }.preview-heading button { font-size:12px; padding:8px; } }

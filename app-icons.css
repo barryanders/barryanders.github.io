@@ -3,8 +3,6 @@
 .gb-app-icon { position:relative; display:block; flex:none; width:64px; height:64px; overflow:hidden; }
 .gb-app-icon.gb-app-icon[data-icon] > img { position:absolute; display:block; max-width:none; margin:0; width:var(--icon-width,100%); height:var(--icon-height,100%); left:var(--icon-left,0%); top:var(--icon-top,0%); object-fit:fill; }
 .gb-app-icon[data-icon="anthora"] { --icon-width:123.225030%; --icon-height:117.972350%; --icon-left:-11.672684%; --icon-top:-7.718894%; }
-.gb-app-icon[data-icon="social-echo"] { --icon-width:100.787402%; --icon-height:100.392157%; --icon-left:-0.295276%; --icon-top:-0.098039%; }
-.gb-app-icon[data-icon="chat-echo"] { --icon-width:101.386139%; --icon-height:101.185771%; --icon-left:-0.792079%; --icon-top:-0.395257%; }
 .gb-app-icon[data-icon="burrow"] { --icon-width:115.896488%; --icon-height:117.968015%; --icon-left:-7.763401%; --icon-top:-8.560677%; }
 .gb-app-icon[data-icon="siggy"] { --icon-width:100.000000%; --icon-height:100.000000%; --icon-left:0.000000%; --icon-top:0.000000%; }
 .gb-app-icon[data-icon="mailpaw"] { --icon-width:100.000000%; --icon-height:100.000000%; --icon-left:0.000000%; --icon-top:0.000000%; }
