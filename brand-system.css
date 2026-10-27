@@ -92,3 +92,13 @@
 .gb-global-header.brand-settled a:focus-visible .gb-wordmark-tail { max-width:70px; opacity:1; }
 .gb-global-header .brand-lockup { min-width:70px; }
 @media(prefers-reduced-motion:reduce) { .gb-wordmark-tail { transition:none; } }
+
+/* Quiet pointer feedback; a stable, padded focus ring for keyboard users. */
+.gb-global-header a, .gb-global-header summary { -webkit-tap-highlight-color:transparent; outline:none; border-radius:10px; }
+.gb-global-header a:focus, .gb-global-header summary:focus { outline:none; }
+.gb-global-header a:focus-visible, .gb-global-header summary:focus-visible { outline:2px solid #0071e380; outline-offset:3px; }
+.gb-global-header .gb-app-menu summary { padding:10px; margin-inline:-10px; border-radius:10px; }
+.gb-global-header .gb-nav-inner > a { padding:8px; margin-left:-8px; }
+.gb-global-header .gb-nav-inner nav > a { padding:10px; margin-right:-10px; }
+.gb-global-header .gb-app-tray a { transition:background-color 180ms ease; }
+@media(prefers-reduced-motion:reduce) { .gb-global-header .gb-app-tray a { transition:none; } }
