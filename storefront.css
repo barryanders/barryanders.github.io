@@ -68,13 +68,13 @@
 .gb-price-label { color:inherit; opacity:.62; font-size:12px; letter-spacing:.02em; margin:24px 0 20px; }
 .gb-storefront .gb-text-link { color:inherit; font-size:16px; }
 .gb-tile-icon .gb-tile-art { padding:48px; margin:0; display:flex; justify-content:center; align-items:center; }
-.gb-storefront .gb-tile-icon .gb-tile-art .gb-app-icon { width:clamp(230px,29vw,430px); height:auto; aspect-ratio:1; margin:auto; filter:drop-shadow(0 24px 25px #17202626); transition:transform 650ms cubic-bezier(.22,1,.36,1); }
+.gb-storefront .gb-tile-icon .gb-tile-art .gb-app-icon { width:clamp(230px,29vw,430px); height:clamp(230px,29vw,430px); aspect-ratio:1; margin:auto; filter:drop-shadow(0 24px 25px #17202626); transition:transform 650ms cubic-bezier(.22,1,.36,1); }
 .gb-product-tile:hover .gb-app-icon { transform:translateY(-8px) rotate(-2deg); }
 .gb-product-tile:nth-child(2) .gb-tile-art { grid-column:1; grid-row:1; }
 .gb-product-tile:nth-child(2) .gb-tile-copy { grid-column:2; }
 .gb-product-tile:nth-child(n+4) .gb-tile-copy { padding:48px 48px 16px; }
 .gb-product-tile:nth-child(n+4) h2 { font-size:clamp(38px,4vw,58px); }
-.gb-storefront .gb-product-tile:nth-child(n+4) .gb-tile-art .gb-app-icon { width:240px; }
+.gb-storefront .gb-product-tile:nth-child(n+4) .gb-tile-art .gb-app-icon { width:240px; height:240px; }
 .gb-product-tile:nth-child(n+4) .gb-tile-art { padding:28px 40px 56px; }
 @media(max-width:700px) {
  .gb-storefront .gb-apps-section { width:calc(100% - 20px); padding-top:10px; }
@@ -86,6 +86,9 @@
  .gb-overline { font-size:16px; margin-bottom:16px; }
  .gb-price-label { margin:18px 0 14px; }
  .gb-tile-icon .gb-tile-art,.gb-product-tile:nth-child(n+4) .gb-tile-art { padding:28px 28px 40px; }
- .gb-storefront .gb-tile-icon .gb-tile-art .gb-app-icon { width:230px; }
+ .gb-storefront .gb-tile-icon .gb-tile-art .gb-app-icon { width:230px; height:230px; }
 }
 @media(prefers-reduced-motion:reduce) { .gb-storefront .gb-tile-icon .gb-tile-art .gb-app-icon { transition:none; }.gb-product-tile:hover .gb-app-icon { transform:none; } }
+
+/* Preserve the complete painted edge of Anthora in the large showcase. */
+.gb-storefront .gb-tile-art .gb-app-icon[data-icon="anthora"] { overflow:visible; }
