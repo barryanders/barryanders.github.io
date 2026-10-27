@@ -70,3 +70,15 @@
 .brand-page .privacy-request-form > p { font-size:14px; }
 .brand-page .privacy-request-form input:focus,.brand-page .privacy-request-form textarea:focus { outline:3px solid #0071e326; border-color:#0071e3; }
 @media(max-width:360px) { .gb-nav-inner { width:calc(100% - 32px); gap:10px; }.gb-nav-inner nav { gap:12px; }.gb-nav-inner nav a { font-size:12px; }.gb-nav-inner .brand-lockup strong { font-size:14px; }.gb-nav-inner .brand-mark { width:22px; height:24px; } }
+
+/* Shared app launcher: one entry in the header, all five apps on demand. */
+.gb-app-menu summary { list-style:none; cursor:pointer; padding:14px 0; color:#424245; font-size:14px; }
+.gb-app-menu summary::-webkit-details-marker { display:none; }
+.gb-app-menu summary span { display:inline-block; margin-left:4px; }
+.gb-app-menu[open] summary span { transform:rotate(180deg); }
+.gb-app-menu summary:focus-visible { outline:3px solid #0071e3; outline-offset:5px; border-radius:4px; }
+.gb-app-tray { position:absolute; top:calc(100% + 8px); right:max(24px,calc((100% - 1200px)/2)); width:min(520px,calc(100% - 32px)); box-sizing:border-box; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:12px; padding:24px 16px; border:1px solid #e5e5e7; border-radius:22px; background:#fff; box-shadow:0 16px 48px #1d1d1f20; }
+.gb-nav-inner nav .gb-app-tray a { display:flex; flex-direction:column; align-items:center; gap:12px; padding:8px 0; text-decoration:none; border-radius:12px; }
+.gb-nav-inner nav .gb-app-tray a:hover { background:#f5f5f7; }
+.gb-app-tray .gb-app-icon { width:56px; height:56px; }
+@media(max-width:600px) { .gb-app-menu summary { font-size:13px; }.gb-app-tray { right:16px; gap:4px; padding:16px 8px; }.gb-app-tray .gb-app-icon { width:44px; height:44px; }.gb-nav-inner nav .gb-app-tray a { font-size:12px; } }
