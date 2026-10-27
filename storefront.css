@@ -45,3 +45,7 @@
 @media(prefers-reduced-motion: reduce) { .gb-product-shelf img { transition: none; } }
 
 @media(max-width:600px){.gb-product-shelf{grid-template-columns:repeat(4,1fr);gap:12px}.gb-product-shelf a{font-size:12px}.gb-product-shelf img{width:48px;height:48px}.gb-feature-image{width:100%}}
+
+.gb-text-link:has(.link-label):hover { text-decoration:none; }
+.gb-text-link .link-label { font-size:inherit; line-height:inherit; }
+.gb-text-link:hover .link-label { text-decoration:underline; text-underline-offset:4px; }
