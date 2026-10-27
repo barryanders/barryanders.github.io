@@ -1,6 +1,6 @@
 /* Shared Anders chrome and reading surfaces. */
 .gb-global-header, .gb-global-footer, .brand-page, .report-page { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; color: #1d1d1f; }
-.gb-global-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.92); backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid #0000000d; }
+.gb-global-header { font-size:14px; font-weight:400; line-height:1.5; letter-spacing:normal; text-transform:none; position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.92); backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid #0000000d; }
 .gb-nav-inner { width: min(1200px, calc(100% - 64px)); margin: auto; min-height: 64px; display: flex; justify-content: space-between; align-items: center; gap: 28px; }
 .gb-nav-inner nav { display: flex; gap: 36px; align-items: center; }
 .gb-nav-inner nav a { font-size: 14px; color: #424245; padding: 14px 0; }
