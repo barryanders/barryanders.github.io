@@ -1,0 +1,20 @@
+/* Real app captures, presented at a readable scale. */
+.app-cinema {margin:24px auto 80px;padding:68px clamp(20px,6vw,96px) 44px;width:min(1500px,calc(100% - 32px));border-radius:32px;background:#edf1f3;text-align:center;overflow:hidden;color:#263c49}
+.cinema-heading {max-width:800px;margin:0 auto 44px}
+.cinema-heading>p {font-size:11px!important;letter-spacing:.16em;font-weight:600;opacity:.65;margin:0 0 18px!important}
+.anders-product .cinema-heading h2 {font-size:clamp(32px,4.5vw,60px);letter-spacing:-.045em}
+.app-cinema figure {margin:0 auto;max-width:1160px}
+.app-cinema figure a {display:block}
+.app-cinema img {display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 28px 65px #13202e26,0 0 0 1px #13202e15}
+.app-cinema figcaption {font-size:13px;color:inherit;opacity:.7;margin-top:30px}
+.cinema-zebra {background:#1b2429;color:#f3f5f5}
+.cinema-zebra figure {max-width:470px}
+.cinema-zebra img {border-radius:16px;box-shadow:0 30px 80px #0006}
+.cinema-siggy {background:#f0ede7;color:#424d43}
+.cinema-mailpaw {background:#e9eff8;color:#2d4562}
+.cinema-burrow {background:#eeeee6;color:#454a39}
+.product-anthora .product-hero-media {max-width:1240px;padding:36px;background:#e9efee;border-radius:28px;box-shadow:none;margin-top:50px}
+.product-anthora .product-hero-media img {border-radius:12px;box-shadow:0 22px 60px #20353226}
+.product-anthora .screen-card {padding:24px;background:#e9efee;border-radius:24px}
+.product-anthora .screen-card img {border-radius:10px;box-shadow:0 14px 35px #20353220}
+@media(max-width:600px){.app-cinema{width:calc(100% - 20px);margin-bottom:44px;padding:38px 12px 28px;border-radius:22px}.cinema-heading{margin-bottom:28px;padding-inline:12px}.app-cinema img{border-radius:7px}.product-anthora .product-hero-media,.product-anthora .screen-card{padding:12px}.app-cinema figcaption{padding-inline:12px;font-size:12px}}
